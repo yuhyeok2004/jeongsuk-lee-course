@@ -1,0 +1,16 @@
+title: Jeongsuk Lee
+description: Jeongsuk Lee
+template:
+  repo: jeongsuk-lee-template
+  name: jeongsuk-lee
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
